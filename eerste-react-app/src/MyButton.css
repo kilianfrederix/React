@@ -1,0 +1,15 @@
+.button {
+    appearance: none;
+    background: lightgray;
+    border: 1px solid dimgray;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: filter 150ms;
+    display: inline-block;
+}
+
+.button:hover {
+    filter: brightness(110%);
+}

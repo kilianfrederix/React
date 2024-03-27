@@ -1,0 +1,38 @@
+.FormInput {}
+
+.FormInput-label {}
+
+.FormInput-InputGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.FormInput-Icon {
+    width: 20px;
+}
+
+.FormInput-labelspan {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.FormInput-input {
+    box-sizing: border-box;
+    display: block;
+    width: 432px;
+    padding: 10px 15px;
+    background-color: rgb(226, 226, 226);
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+}
+
+.error {
+    color: red;
+    background-color: rgb(255, 184, 184);
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}

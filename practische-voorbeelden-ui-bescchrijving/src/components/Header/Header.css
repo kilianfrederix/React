@@ -1,0 +1,12 @@
+.Title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    margin-top: 0px;
+}

@@ -1,0 +1,9 @@
+.Button {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(190, 183, 183);
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    width: 432px;
+}

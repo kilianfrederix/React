@@ -1,0 +1,31 @@
+.textarea {
+    display: flex;
+    font-weight: bold;
+}
+
+
+.textarea-input {
+    box-sizing: border-box;
+    display: block;
+    width: 432px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: rgb(226, 226, 226);
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+}
+
+.error {
+    color: red;
+    background-color: rgb(255, 184, 184);
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.textarea-labelspan {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
