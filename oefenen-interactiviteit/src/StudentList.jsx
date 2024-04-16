@@ -48,7 +48,3 @@ export default function StudentList({ student, onDeleteStudent, onEditStudent })
         </li>
     );
 }
-
-
-
-
