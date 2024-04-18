@@ -1,4 +1,4 @@
-// App.jsx
+
 import React, { useState } from 'react';
 import Toolbar from './components/Toolbar';
 import NoteList from './components/NoteList';
@@ -7,14 +7,14 @@ import './App.css';
 function App() {
   const [notes, setNotes] = useState([]);
   const [selectedNote, setSelectedNote] = useState(null);
-  const [filterType, setFilterType] = useState('all'); // 'all' of 'favorites'
+  const [filterType, setFilterType] = useState('all');
   const [noteContentMap, setNoteContentMap] = useState({});
 
   const handleAddNote = () => {
-    const newNote = { id: Date.now(), content: 'Nieuwe notitie', favorite: false };
+    const newNote = { id: crypto.randomUUID(), content: 'Nieuwe notitie', favorite: false };
     setNotes([newNote, ...notes]);
     setSelectedNote(newNote);
-    setNoteContentMap({ ...noteContentMap, [newNote.id]: 'Nieuwe notitie' });
+    setNoteContentMap({ ...noteContentMap, [newNote.id]: '' });
   };
 
   const handleDeleteNote = () => {
@@ -90,7 +90,7 @@ function App() {
       />
       <div id="note-editor">
         <textarea
-          placeholder=""
+          placeholder="New Note"
           className="form-control"
           value={selectedNote ? noteContentMap[selectedNote.id] : ''}
           onChange={(e) => updateNoteContent(e.target.value)}

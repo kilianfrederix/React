@@ -1,4 +1,4 @@
-export default function Note({ note, content, isSelected ,onNoteSelect, setContent }) {
+export default function Note({ note, content, onNoteSelect }) {
     return (
         <button
             type="button"
